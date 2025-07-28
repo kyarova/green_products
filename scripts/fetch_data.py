@@ -7,7 +7,13 @@ from dotenv import load_dotenv
 load_dotenv()
 API_KEY = os.getenv("AMAZON_API_KEY")
 
-def search_amazon(query, save_path="data/results.json"):
+def search_amazon(query, save_dir="../data/data_raw"):
+
+    filename = query.lower().replace(" ", "_") + ".json"
+    save_path = os.path.join(save_dir, filename)
+
+    os.makedirs(save_dir, exist_ok=True)
+
     params = {
         "engine": "amazon",
         "api_key": API_KEY,
@@ -26,5 +32,5 @@ def search_amazon(query, save_path="data/results.json"):
     else:
         print(f"Error: {response.status_code}, {response.content}")
 
-search_amazon("soap", save_path="../data/data_raw/soap.json")
-time.sleep(1)  # to respect rate limits
+
+search_amazon('single-use')

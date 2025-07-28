@@ -37,3 +37,9 @@ def label_product(text, green_keywords):
         if kw in text:
             return 'green'
     return 'not green'
+
+
+def load_green_keywords(file_path):
+    with open(file_path, 'r') as file:
+        keywords = [line.strip() for line in file if line.strip()]
+    return keywords

@@ -1,12 +1,18 @@
 # Green Product Classifier
 
-This project classifies Amazon product listings as **Green**, **Not Green**, or **Unsure**, based on product titles and descriptions. The goal is to identify eco-friendly products and uncover ambiguous or misleading sustainability claims.
+This project classifies Amazon product listings as **Green**, **Not Green**, or **Unsure**, based on product titles and descriptions. The goal is to identify eco-friendly products and inform customers about greener product choice.
 
 ---
 
 ## Project Objective
 
-Build a lightweight text classifier to help distinguish between green and non-green consumer products, using simple text-based features and an iterative, keyword-driven approach.
+Build a lightweight text classifier to help distinguish between green and non-green consumer products, using simple text-based features and an iterative, keyword-driven approach. 
+
+---
+
+## Future Vision
+
+This model can be deployed as a browser extension to inform customers whether products are green or non-green, raising awareness and encouraging eco-friendly purchases. The ultimate goal is a recommender system that suggests green alternatives when customers browse non-green products.
 
 ---
 
